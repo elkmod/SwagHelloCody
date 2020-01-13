@@ -1,0 +1,18 @@
+{
+  "name": "swag/hello-cody",
+  "description": "Let Cody say hello",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "SwagHelloCody\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "SwagHelloCody\\SwagHelloCody",
+    "label": {
+      "de-DE": "Hallo Cody!",
+      "en-GB": "Hello Cody!"
+    }
+  }
+}
