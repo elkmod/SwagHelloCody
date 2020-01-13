@@ -10,6 +10,7 @@
   },
   "extra": {
     "shopware-plugin-class": "SwagHelloCody\\SwagHelloCody",
+    "plugin-icon": "src/Resources/config/plugin.png",
     "label": {
       "de-DE": "Hallo Cody!",
       "en-GB": "Hello Cody!"
