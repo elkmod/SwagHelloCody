@@ -18,7 +18,8 @@ class RandomPhraseGenerator
         'Don\'t call it backend',
         'Reactivity is your friend, as long as it works.',
         'It worked yesterday',
-        '"Mobile first, bro!" – Shakespeare'
+        '"Mobile first, bro!" – Shakespeare',
+        'Weeks of coding can save hours of planning.'
     ];
 
     function generatePhrase(): string
