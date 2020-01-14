@@ -19,8 +19,10 @@ class RandomPhraseGenerator
         'Reactivity is your friend, as long as it works.',
         'It worked yesterday',
         '"Mobile first, bro!" – Shakespeare',
+        'Everybody demands a dark theme, but nobody asks me about the dark room.',
+        '"The only `intuitive` interface is the nipple. After that, it`s all learned." - Bruce Ediger',
         'Knock Knock. Race condition. Who\'s there?',
-        'I\'ve got a really good UDP joke, but I don't know if you\'d get it',
+        'I\'ve got a really good UDP joke, but I don\'t know if you\'d get it',
         'To understand recursion you have to understand recursion first'
     ];
 
