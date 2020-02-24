@@ -1,38 +1,35 @@
 <template>
-    <div v-if="phrase" class="hello-cody">
-        <h3>{{ phrase }}</h3>
-    </div>
+  <div class="hello-cody">
+    <h3>{{ phrase }}</h3>
+  </div>
 </template>
 <script>
-  import axios from 'axios'
+import axios from "axios";
+import config from "~/shopware-pwa.config.js";
 
-  /**
-   * should be replaced within the building/dumping process (pwa side) or just inject apiClient
-   * or even register apiClient as a plugin to be available under this.$apiClient in nuxt globally
-   */
-  const SHOPWARE_API_URL =
-    'https://shopware-2.vuestorefront.io/sales-channel-api/v1'
-  const PLUGIN_ENDPOINT_URL = '/random-phrase'
-  const SW_ACCESS_KEY = 'SWSCMUDKAKHSRXPJEHNOSNHYAG'
+// TODO: API CLIENT needs to provide get/post methods to be able to invoke
+const SHOPWARE_API_URL = config.shopwareEndpoint;
+const PLUGIN_ENDPOINT_URL = "/random-phrase";
+const SW_ACCESS_KEY = config.shopwareAccessToken;
 
-  export default {
-    data() {
-      return {
-        phraseResponse: null
-      }
-    },
-    async mounted() {
+export default {
+  data() {
+    return {
+      phraseResponse: null
+    };
+  },
+  async mounted() {
     try {
       this.phraseResponse = await axios.get(
         `${SHOPWARE_API_URL}${PLUGIN_ENDPOINT_URL}`,
         {
           headers: {
-            'sw-access-key': SW_ACCESS_KEY
+            "sw-access-key": SW_ACCESS_KEY
           }
         }
-      )
+      );
     } catch (e) {
-      console.warn('SwHelloCody.vue: ', e)
+      console.warn("SwHelloCody.vue: ", e);
     }
   },
   computed: {
@@ -41,17 +38,19 @@
         this.phraseResponse &&
         this.phraseResponse.data &&
         this.phraseResponse.data.phrase
-      )
+      );
     }
   }
-  }
+};
 </script>
 <style lang="scss" scoped>
-    .hello-cody {
-        margin: 20px auto 20px auto;
+.hello-cody {
+  padding: 20px 5px;
+  min-height: 30px;
+  text-align: right;
 
-        h3 {
-            font-weight: 100;
-        }
-    }
+  h3 {
+    font-weight: 100;
+  }
+}
 </style>
