@@ -26,5 +26,9 @@ Since your Shopware application and the PWA can (and probably should) run on dif
 
  1. The [Shopware-PWA](https://github.com/elkmod/SwagVueStorefront) plugin is installed within the Shopware instance
  2. Your custom extension is installed and activated within the Shopware instance
- 3. The server that builds (! not the one that serves) your PWA is connected with Shopware through the Admin API, so it can request the plugin and its resources.
+ 3. The server that builds (! not the one that serves) your PWA is connected with Shopware through the Admin API, so it can request the plugin and its resources. In order to do that, run
+    ```
+    shopware-pwa init -u SHOPWARE_INSTANCE_ADMIN_USER -p SHOPWARE_ADMIN_PASSWORD
+    ```
+    within your PWA project root. Consider the [shopware-pwa readme](https://github.com/DivanteLtd/shopware-pwa#quick-start) for more information on how to set up.
  4. Based on the plugin resources (components, configurations) your PWA application will be built and can be served afterwards.
