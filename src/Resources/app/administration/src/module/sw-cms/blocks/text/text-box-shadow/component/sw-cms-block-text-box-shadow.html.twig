@@ -1,0 +1,7 @@
+{% block sw_cms_block_text_box_shadow %}
+    <div class="sw-cms-block-text-box-shadow">
+        <slot name="contentLeft">{% block sw_cms_block_text_box_shadow_slot_content_left %}{% endblock %}</slot>
+        <slot name="contentCenter">{% block sw_cms_block_text_box_shadow_slot_content_center %}{% endblock %}</slot>
+        <slot name="contentRight">{% block sw_cms_block_text_box_shadow_slot_content_right %}{% endblock %}</slot>
+    </div>
+{% endblock %}

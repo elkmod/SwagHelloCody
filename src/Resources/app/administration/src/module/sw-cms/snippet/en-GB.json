@@ -1,0 +1,11 @@
+{
+    "sw-cms": {
+        "blocks": {
+            "text": {
+                "textBoxShadow": {
+                    "label": "Textbox with shadow"
+                }
+            }
+        }
+    }
+}
