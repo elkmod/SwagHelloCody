@@ -2,9 +2,14 @@
     "sw-cms": {
         "blocks": {
             "text": {
-                "textBoxShadow": {
-                    "label": "Textbox with shadow"
+                "mapView": {
+                    "label": "Google maps view"
                 }
+            }
+        },
+        "elements": {
+            "mapView": {
+                "label": "Google Maps view"
             }
         }
     }

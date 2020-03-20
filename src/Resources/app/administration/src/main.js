@@ -1,4 +1,5 @@
-import './module/sw-cms/blocks/text/text-box-shadow';
+import './module/sw-cms/blocks/text/map-view';
+import './module/sw-cms/elements/map-view';
 
 import deDE from './module/sw-cms/snippet/de-DE.json';
 import enGB from './module/sw-cms/snippet/en-GB.json';

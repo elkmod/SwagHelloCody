@@ -2,11 +2,11 @@ import './component';
 import './preview';
 
 Shopware.Service('cmsService').registerCmsBlock({
-    name: 'text-box-shadow',
-    label: 'sw-cms.blocks.text.textBoxShadow.label',
+    name: 'map-view',
+    label: 'sw-cms.blocks.text.mapView.label',
     category: 'text',
-    component: 'sw-cms-block-text-box-shadow',
-    previewComponent: 'sw-cms-preview-text-box-shadow',
+    component: 'sw-cms-block-map-view',
+    previewComponent: 'sw-cms-preview-map-view',
     defaultConfig: {
         marginBottom: '20px',
         marginTop: '20px',
@@ -15,8 +15,6 @@ Shopware.Service('cmsService').registerCmsBlock({
         sizingMode: 'boxed'
     },
     slots: {
-        contentLeft: 'text',
-        contentCenter: 'text',
-        contentRight: 'text',
+        map: 'text',
     }
 });

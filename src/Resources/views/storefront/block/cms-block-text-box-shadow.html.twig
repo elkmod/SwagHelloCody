@@ -1,0 +1,23 @@
+{% block block_text_box_shadow %}
+    {% set element = block.slots.getSlot('content') %}
+    <div class="col-12">
+        <div class="sw-cms-block-text-box-shadow" class="col-12" data-cms-element-id="{{ element.id }}">
+            {% block block_text_box_shadow_inner %}
+                {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+            {% endblock %}
+        </div>
+        <div class="sw-cms-block-map" id="map">
+            Map here
+        </div>
+        <script>
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: -34.397, lng: 150.644},
+                    zoom: 8
+                });
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=[key]&callback=initMap" async defer></script>
+    </div>
+{%  endblock %}
