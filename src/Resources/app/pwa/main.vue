@@ -9,7 +9,7 @@ import config from "~/shopware-pwa.config.js";
 
 // TODO: API CLIENT needs to provide get/post methods to be able to invoke
 const SHOPWARE_API_URL = config.shopwareEndpoint;
-const PLUGIN_ENDPOINT_URL = "/random-phrase";
+const PLUGIN_ENDPOINT_URL = "/sales-channel-api/v1/random-phrase";
 const SW_ACCESS_KEY = config.shopwareAccessToken;
 
 export default {
