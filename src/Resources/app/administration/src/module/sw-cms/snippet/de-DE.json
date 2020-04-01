@@ -1,0 +1,16 @@
+{
+    "sw-cms": {
+        "blocks": {
+            "text": {
+                "mapView": {
+                    "label": "Google Maps Ansicht"
+                }
+            }
+        },
+        "elements": {
+            "mapView": {
+                "label": "Google Maps Ansicht"
+            }
+        }
+    }
+}
