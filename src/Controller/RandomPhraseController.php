@@ -2,7 +2,6 @@
 
 namespace SwagHelloCody\Controller;
 
-
 use Shopware\Core\Framework\Routing\Annotation\RouteScope;
 use SwagHelloCody\Content\RandomPhraseGenerator;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
@@ -10,7 +9,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @RouteScope(scopes={"sales-channel-api"})
+ * @RouteScope(scopes={"store-api"})
  */
 class RandomPhraseController extends AbstractController
 {
@@ -25,7 +24,7 @@ class RandomPhraseController extends AbstractController
     }
 
     /**
-     * @Route("/sales-channel-api/v{version}/random-phrase", name="sales-channel-api.random-phrase", methods={"GET"})
+     * @Route("/store-api/random-phrase", name="store-api.random-phrase", methods={"GET"})
      */
     public function randomPhrase()
     {
